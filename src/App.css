@@ -1,0 +1,290 @@
+
+:root {
+  --primary: #6D5DF6;
+  --secondary: #8A7CFB;
+  --bg-light: #F5F3FF;
+  --text-dark: #2E2A4F;
+  --accent: #E6DFFF;
+  --white: #ffffff;
+}
+
+
+body {
+  background-color: #f9f9ff;
+  color: #333;
+}
+
+.section {
+  background: white;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.navbar {
+ background: var(--white);
+  box-shadow: 0 4px 20px rgba(109, 93, 246, 0.1);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.navbar a {
+  color: rgb(9, 1, 1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+a{
+  color: rgb(14, 2, 2);
+  text-decoration: none;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.219),
+      rgba(149, 149, 161, 0.158)
+    ),
+    url("./assets/profile.png") center/cover no-repeat;
+  color: white;
+}
+
+.section {
+  padding: 60px 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.project-card {
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: black;
+  border-left: 5px solid #101011;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(109, 93, 246, 0.15);
+  transition: 0.3s ease;
+ 
+}
+
+.project-card:hover {
+   transform: translateY(-8px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+  color: var(--white);
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.contact-section {
+  background: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+}
+
+/* MAIN CONTAINER */
+.contact-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;              /* ✅ centers whole block */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(109, 93, 246, 0.15);
+}
+
+/* IMAGE */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image img {
+  max-width: 420px;
+  width: 100%;
+}
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+/* .contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+} */
+
+.contact-form button {
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: none;
+  background: #101011;
+  
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #555;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.profile-pic {
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+
+.light {
+  background-color: #f9f9ff;
+  color: #333;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark .section {
+  background-color: #1e1e1e;
+}
+
+.dark .navbar {
+  background: linear-gradient(90deg, #222, #000);
+}
+
+.dark a {
+  color: #ddd;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+.social-icons {
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+ 
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #545454f5;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .contact-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-image img {
+    max-width: 300px;
+  }
+}
